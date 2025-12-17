@@ -1,0 +1,47 @@
+# NTL-SysToolbox Configuration
+# Ce fichier peut être surchargé par variables d'environnement
+
+# Active Directory / DNS Configuration
+ad:
+  domain: "ntl.local"
+  domain_controllers:
+    - "dc01.ntl.local"
+    - "dc02.ntl.local"
+  dns_servers:
+    - "10.0.0.10"
+    - "10.0.0.11"
+
+# MySQL WMS Database Configuration
+mysql:
+  host: "${MYSQL_HOST:localhost}"
+  port: "${MYSQL_PORT:3306}"
+  user: "${MYSQL_USER:root}"
+  password: "${MYSQL_PASSWORD:}"
+  database: "${MYSQL_DATABASE:wms}"
+  backup_path: "./backups"
+
+# Audit Configuration
+audit:
+  network_ranges:
+    - "10.0.0.0/24"
+    - "192.168.1.0/24"
+  eol_data_source: "https://endoflife.date/api"
+  eol_data_cache_hours: 24
+
+# Output Configuration
+output:
+  json_path: "./reports/json"
+  report_path: "./reports"
+  log_path: "./logs"
+
+# Exit Codes
+exit_codes:
+  success: 0
+  warning: 1
+  critical: 2
+
+# Logging
+logging:
+  level: "info"
+  console: true
+  file: true

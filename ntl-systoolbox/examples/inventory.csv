@@ -1,0 +1,6 @@
+ip,hostname,os,version
+10.0.0.10,dc01.ntl.local,windows,Server 2019
+10.0.0.20,wms-db01,ubuntu,18.04
+10.0.0.30,web-server,ubuntu,22.04
+10.0.0.40,backup-srv,debian,10
+10.0.0.50,file-server,windows,Server 2016
