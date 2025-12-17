@@ -1,0 +1,28 @@
+# Configuration NTL-SysToolbox
+# Les valeurs peuvent être surchargées par variables d'environnement
+
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: ""
+  database: wms
+
+ad:
+  domain_controllers: 
+    - dc01.nordtransit.local
+    - dc02.nordtransit.local
+
+dns:
+  servers:
+    - 192.168.1.10
+    - 192.168.1.11
+
+backup:
+  path: ./backups
+
+reports:
+  path: ./reports
+
+audit:
+  eol_api: https://endoflife.date/api

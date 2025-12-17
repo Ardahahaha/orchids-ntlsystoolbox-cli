@@ -1,0 +1,5 @@
+ip,hostname,os,version
+192.168.1.10,srv-dc01,windows-server,2016
+192.168.1.20,srv-wms01,ubuntu,20.04
+192.168.1.30,srv-db01,ubuntu,18.04
+192.168.1.40,srv-web01,windows-server,2019
