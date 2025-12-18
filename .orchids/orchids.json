@@ -2,6 +2,6 @@
   "projectId": "ee8483b5-e479-426d-aa84-b29a69666f29",
   "createdAt": 1766047116758,
   "startupCommands": [
-    "bun add @swc/helpers && bun run dev"
+    "bun add @swc/helpers; bun run dev"
   ]
 }
